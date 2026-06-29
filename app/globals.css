@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@variant dark (.dark &);
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #334155;
+    border-radius: 10px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #475569;
+}
